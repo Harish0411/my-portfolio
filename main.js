@@ -16,13 +16,14 @@ $('.skill-row').owlCarousel({
     }
 })
 
-document.querySelectorAll('.nav-menu li a').forEach(e =>{
-    e.classList.remove('active')
-    e.addEventListener('click', (val) =>{
-        val.preventDefault()
-        console.log(e);
-        e.classList.add('active')
-       
+let navLink = document.querySelectorAll('.nav-menu li a')
+navLink.forEach(e => {
+    e.addEventListener('click', () =>{
+        // nav.classList.remove('active')
+		console.log(e);
+       console.log('click');
+       document.querySelector('.active')?.classList.remove('active')
+       e.classList.add('active')
     })
 })
 
