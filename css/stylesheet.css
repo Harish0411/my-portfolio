@@ -20,6 +20,9 @@
 	 box-shadow:-5px -3px 10px #00000085;
 
 }
+.hamburger{
+     padding-right: 30px;
+}
 .header-container{
      width:90%;
 	 margin:auto;
