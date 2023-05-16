@@ -16,6 +16,16 @@ $('.skill-row').owlCarousel({
     }
 })
 
+document.querySelectorAll('.nav-menu li a').forEach(e =>{
+    e.classList.remove('active')
+    e.addEventListener('click', (val) =>{
+        val.preventDefault()
+        console.log(e);
+        e.classList.add('active')
+       
+    })
+})
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

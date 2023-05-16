@@ -78,7 +78,6 @@
      width: 25px;
      height: 3px;
      margin: 5px auto;
-     -webkit-transition: all 0.3s ease;
      transition: all 0.3s ease;
      background-color: white;
    }
@@ -99,15 +98,15 @@
      }
    
      .nav-menu{
-       position: fixed;
-       left: -100%;
-       top: 70px;
-       gap: 0;
-       flex-direction: column;
-       background-color: #26262642;
-       width: 100%;
-       text-align: center;
-       transition: 0.3s;
+          position: fixed;
+          left: -100%;
+          top: 59px;
+          gap: 0;
+          flex-direction: column;
+          background-color: #ad4bad;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
      }
      .header-col li{
           display: block;
@@ -852,6 +851,9 @@ p span{
 	 padding:20px;
 	
 }
+.about-col li{
+     font-size: 21px;
+}
 .download{
      text-align:center;
 }
@@ -929,6 +931,9 @@ p span{
      width:100%;
 	 padding:30px;
 }
+.con-info a{
+   font-size: 17px;
+}
 
 
 }
@@ -983,6 +988,9 @@ p span{
      width:100%;
 	 padding:25px;
 	
+}
+.about-col li{
+     font-size: 25px;
 }
 /* skill section */
 
@@ -1056,6 +1064,9 @@ p span{
      width:50%;
 	 padding:30px;
 }
+.con-info a{
+     font-size: 20px;
+}
 
 }
 @media (min-width:1020px){
@@ -1109,6 +1120,7 @@ p span{
 	 padding:25px;
 	
 }
+
 /* skill section*/
 
 .skill-container{
