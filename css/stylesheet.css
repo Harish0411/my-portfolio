@@ -146,16 +146,7 @@
 .banner-row{
      display:flex;
 }
-.banner-col{
-         width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-	
-	 
-}
+
 .content{
      padding-left:20rem;
 	 line-height:60px;
@@ -406,10 +397,11 @@ p span{
 .skill-img img{
      max-width: 100%;
 }
-.skill-col{
-     text-align: center;
-     display: flex;
-     justify-content: center;
+
+.skill-col {
+     display: flex !important;
+     justify-content: center !important;
+     width: 100% !important;
 }
 /* .skill-card{
      padding:20px;
@@ -827,17 +819,33 @@ p span{
 
 .banner-col{
          width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+       padding: 120px 0;
 	
 	 
 }
 .content{
-     padding-left:0px;
-	 line-height:60px;
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     height: 100vh;
+     padding-left: 16px;
+}
+.content h1{
+     font-size: 30px;
+}
+.content h1 span{
+     font-size: 35px;
+}
+.content p{
+     font-size: 30px;
+}
+.content a{
+     font-size: 20px;
+}
+.footer-icon{
+     display: none;
 }
 /* about section */
 
@@ -859,6 +867,28 @@ p span{
 }
 .download{
      text-align:center;
+}
+.img::before {
+     content: "";
+     position: absolute;
+     border-bottom: 7px solid #cdb4db;
+     border-right: 7px solid #cdb4db;
+     bottom: -11px;
+     right: -13px;
+     height: 85px;
+     width: 85px;
+     border-radius: 5px;
+}
+.img::after{
+     content: "";
+     position: absolute;
+     border-top: 7px solid #cdb4db;
+     border-left: 7px solid #cdb4db;
+     top: -11px;
+     left: -11px;
+     height: 85px;
+     width: 85px;
+     border-radius: 5px;
 }
 /* skill section */
 
@@ -963,19 +993,29 @@ p span{
 .banner-row{
      display:flex;
 }
-.banner-col{
-         width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-	
-	 
-}
 .content{
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     height: 100vh;
      padding-left:20rem;
-	 line-height:60px;
+}
+.content h1{
+     font-size: 50px;
+}
+.content h1 span{
+     font-size: 55px;
+}
+.content p{
+     font-size: 35px;
+}
+.content a{
+     font-size: 25px;
+}
+.footer-icon{
+     display: block;
 }
 /* about section */
 
@@ -1089,24 +1129,39 @@ p span{
 }
 /* banner section */
 .banner-container{
-	 width:100%;
+     width:100%;
 }
 .banner-row{
-     display:flex;
+    display:flex;
 }
-.banner-col{
-         width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-	
-	 
-}
+
 .content{
-     padding-left:20rem;
-	 line-height:60px;
+    padding-left:20rem;
+     line-height:60px;
+}
+.content span{
+     font-size:55px;
+      color:#bde0fe;
+}
+.content h1{
+    color:#fff;
+     font-size:50px;
+     text-transform:capitalize;
+}
+.content a{
+    color:#bde0fe;
+     font-size:25px;
+}
+.content a i{
+    font-size:18px;
+}
+.content a:hover{
+    color:#cdb4db;
+}
+.content p{
+    font-size:40px;
+     color:#fff;
+     text-transform:capitalize;
 }
 /* about section */
 
@@ -1134,11 +1189,7 @@ p span{
      display:flex;
 	 flex-wrap:wrap;
 }
-.skill-col{
-   padding:10px;
-   width:33.33%;
-	 overflow:hidden;
-}
+
 .item{
      padding:30px 12px;
 	
